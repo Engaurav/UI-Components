@@ -1,0 +1,59 @@
+
+.main{
+    .upload-container{
+        border: dashed gray 2px;
+        display: inline-block;
+        height: 100px;
+        // width: 400px;
+        background: white;
+        text-align: center;
+        padding: 1rem 2rem;
+        position: relative;
+        cursor: pointer;
+        .browse-file{
+            position: absolute;
+            opacity: 0;
+            width: 100%;
+            left: 0;
+            top: 0;
+            height: 100%;
+            cursor: pointer;
+        }
+        .upload-icon{
+            .mat-icon{
+                overflow: visible;
+            }
+        }
+        .head{
+            margin-top: 0.8rem;
+            font-size: medium;
+            color: darkslategray;
+        }
+        .allowed{
+            font-size: small;
+            color: gray;
+        }
+    }
+    .upload-files{
+        border: dashed gray 2px;
+        display: inline-block;
+        height: 100px;
+        background: white;
+        padding: 1rem 2rem;
+        position: relative;
+        overflow: auto;
+        ul{
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            overflow: auto;
+            li{
+                background: lightblue;
+                margin: 5px 0;
+            }   
+        }
+    }
+}
+.active{
+    background: #d9dcf0;
+}
